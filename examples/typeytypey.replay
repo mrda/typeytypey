@@ -1,0 +1,46 @@
+#
+# This is an example typeytypey replay file
+# Author: Michael Davies <michael@the-davies.net>
+# See https://github.com/mrda/junkcode/blob/master/typeytypey.py
+#
+start 5
+
+prompt [mrda@xenon ~]$
+return
+return
+
+cmd hostane
+out
+bash: hostane: command not found...
+endout
+cmd hostname
+out
+xenon
+endout
+return
+
+cmd cd src/junkcode
+prompt [mrda@xenon junkcode]$
+# return
+
+cmd ls -1 s*.py
+wait 5
+out
+secretary.py*
+select-name.py*
+simple_text_encoder.py*
+ski-ramp.py*
+sleep_sort.py*
+speechinator.py*
+sudoku.py*
+endout
+
+cmd md5sum sudoku.py
+out
+199d21127b0b6a8dc0612402e0d87803  sudoku.py
+endout
+
+# Note that it's good to capture input at the end of your replay script
+# for a certain time period to make sure you're not caught out by typing
+# too many characters :-)
+end 10
