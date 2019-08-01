@@ -8,7 +8,7 @@ especially with "live" demos?
 
 I'll let you in on a secret, they're not.
 
-Often presenters will use demo replay tools, and I've written a prrof of
+Often presenters will use demo replay tools, and I've written a proof of
 concept showing you how it can be done.
 
 Even though this thing is fine for my personal use, I welcome patches,
